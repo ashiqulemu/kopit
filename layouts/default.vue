@@ -78,16 +78,62 @@
 					        <div class="brand">
 						        <img src="../assets/images/logo.png"/>
 					        </div>
-					        <div class="items">
+							<div class="nav-menu-mobile" @click.prevent="navMenu()">
+								<i class="mdi mdi-menu"></i>
+							</div>
+					        <div class="items" id="nav">
 						        <ul>
-							        <li> <a href="" class="active"> women </a> </li>
-							        <li> <a href=""> men </a> </li>
-							        <li> <a href=""> home & garden</a> </li>
-							        <li> <a href=""> health & beauty </a> </li>
-							        <li> <a href=""> collectibilities & art  </a> </li>
-							        <li> <a href="">hand bags </a> </li>
-							        <li> <a href=""> jewellery </a> </li>
-							        <li> <a href=""> <i class="mdi mdi-apple-keyboard-command"></i>  </a> </li>
+							        <li>
+										<a href="#" class="active">
+										women
+											<div class="submenu">
+												<div class="item-container">
+													<div class="slot">
+
+														<ul>
+															<h5>categories</h5>
+															<li><a href="">clothing</a></li>
+															<li><a href="">shoes</a></li>
+															<li><a href="">Accessories</a></li>
+															<li><a href="">vantage</a></li>
+															<li><a href="">formal & wedding</a></li>
+														</ul>
+														<ul>
+															<h5>deals</h5>
+															<li><a href="">under 100$</a></li>
+															<li><a href="">under 50$</a></li>
+														</ul>
+
+														<button class="btn-custom"> All fashion </button>
+
+													</div>
+													<div class="slot">
+														<ul>
+															<h5>top brands</h5>
+															<li><a href="">anthoropologie</a></li>
+															<li><a href="">ann taylor</a></li>
+															<li><a href="">banana republic</a></li>
+															<li><a href="">calvin klein</a></li>
+															<li><a href="">gap</a></li>
+															<li><a href="">g.crew</a></li>
+															<li><a href="">lululemon</a></li>
+															<li><a href="">michal kors</a></li>
+															<li><a href="">kike</a></li>
+															<li><a href="">ralph lauren</a></li>
+														</ul>
+													</div>
+												</div>
+
+											</div>
+										</a>
+									</li>
+							        <li> <a href="#"> men </a> </li>
+							        <li> <a href="#"> home & garden</a> </li>
+							        <li> <a href="#"> health & beauty </a> </li>
+							        <li> <a href="#"> collectibilities & art  </a> </li>
+							        <li> <a href="#">hand bags </a> </li>
+							        <li> <a href="#"> jewellery </a> </li>
+							        <li> <a href="#"> <i class="mdi mdi-apple-keyboard-command"></i>  </a> </li>
 						        </ul>
 					        </div>
 				        </div>
@@ -129,8 +175,8 @@
     
   <section class="footer">
 	<div class="container">
-		<v-row >
-			<v-col cols="3" sm="12"  md="3" >
+		<v-row class="footer-content">
+			<v-col cols="3" sm="12" class="footer-items" md="3" >
 				<h3 >Links</h3>
 				<ul>
 					<li> <a href=""> About </a> </li>
@@ -140,7 +186,7 @@
 					<li> <a href=""> Terms of use </a> </li>
 				</ul>
 			</v-col>
-			<v-col cols="3" sm="12"  md="3" >
+			<v-col cols="3" sm="12" class="footer-items" md="3" >
 				<h3>newsletter</h3>
 			
 				 <p class="pt-2 subscribe" >
@@ -153,7 +199,7 @@
 			     	</button>
 				</label>
 			</v-col>
-			<v-col cols="4" sm="12"  md="4" >
+			<v-col cols="4" sm="12" class="footer-items" md="4" >
 				<h3>instagram feeds</h3>
 				<p class="pt-1">
 					<img src="../assets/images/feed.JPG" class="feed">
@@ -166,7 +212,7 @@
 					<img src="../assets/images/feed.JPG" class="feed">
 				</p>
 			</v-col>
-			<v-col cols="2" sm="12"  md="2" >
+			<v-col cols="2" sm="12" class="footer-items" md="2" >
 				<h3>Follow us </h3>
 				<p>Let us be social</p>
 				<ul class="social">
@@ -211,6 +257,12 @@ export default {
       rightDrawer: false,
       title: 'Vuetify.js'
     }
-  }
+  },
+  methods:{
+      navMenu(){
+          let nav = document.getElementById('nav');
+          nav.classList.toggle("open");
+      }
+  },
 }
 </script>

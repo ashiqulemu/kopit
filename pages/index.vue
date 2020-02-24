@@ -1,7 +1,7 @@
 <template>
   <section class="products-section">
-    <v-row >
-      <v-col cols="3" sm="12"  md="3" >
+    <v-row class="mobile-view">
+      <v-col cols="3" sm="12"  md="3"  class="sidebar">
         <v-card class=" sidebar-items">
           <div class="header">
             categories
@@ -98,7 +98,7 @@
           </div>
         </v-card>
       </v-col>
-      <v-col cols="9" md="9" sm="12" xs="12" >
+      <v-col cols="9" md="9" sm="12" xs="12" class="content">
         <v-card class="sort-bar" >
           <div class="left">
             <select name="sort" id="">
@@ -124,7 +124,7 @@
           </div>
         </v-card>
         <v-row class="products">
-          <v-col cols="4" sm="12" md="4">
+          <v-col cols="4" sm="12" class="product-items" md="4">
             <v-card class="items">
               <img src="../assets/images/1.JPG" alt="">
               <p class="name">Product name here </p>
@@ -140,7 +140,7 @@
               </div>
             </v-card>
           </v-col>
-          <v-col cols="4" sm="12" md="4">
+          <v-col cols="4" sm="12" class="product-items" md="4">
             <v-card class="items">
               <img src="../assets/images/2.JPG" alt="">
               <p class="name">Product name here </p>
@@ -156,7 +156,7 @@
               </div>
             </v-card>
           </v-col>
-          <v-col cols="4" sm="12" md="4">
+          <v-col cols="4" sm="12" class="product-items" md="4">
             <v-card class="items">
               <img src="../assets/images/3.JPG" alt="">
               <p class="name">Product name here </p>
@@ -172,7 +172,7 @@
               </div>
             </v-card>
           </v-col>
-          <v-col cols="4" sm="12" md="4">
+          <v-col cols="4" sm="12" class="product-items" md="4">
             <v-card class="items">
               <img src="../assets/images/1.JPG" alt="">
               <p class="name">Product name here </p>
@@ -188,7 +188,7 @@
               </div>
             </v-card>
           </v-col>
-          <v-col cols="4" sm="12" md="4">
+          <v-col cols="4" sm="12" class="product-items" md="4">
             <v-card class="items">
               <img src="../assets/images/2.JPG" alt="">
               <p class="name">Product name here </p>
@@ -204,7 +204,7 @@
               </div>
             </v-card>
           </v-col>
-          <v-col cols="4" sm="12" md="4">
+          <v-col cols="4" sm="12" class="product-items" md="4">
             <v-card class="items">
               <img src="../assets/images/3.JPG" alt="">
               <p class="name">Product name here </p>
