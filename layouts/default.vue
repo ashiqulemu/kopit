@@ -57,11 +57,11 @@
         <!--<v-icon>mdi-menu</v-icon>-->
       <!--</v-btn>-->
     <!--</v-app-bar>-->
-    
+
     <section class="site-header">
 	    <div class="container-fluid">
 			    <div class="top-bar d-flex flex-wrap justify-content-between">
-				    <div class="flex-grow-1">
+				    <div class="flex-grow-1 hidden-sm-and-down">
 					    <button class="btn-custom"> sell on kopit </button>
 				    </div>
 				    <div class="flex-grow-1 d-flex justify-end">
@@ -148,13 +148,13 @@
 			    </div>
 	    </div>
     </section>
-    
+
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    
+
     <!--<v-navigation-drawer-->
       <!--v-model="rightDrawer"-->
       <!--:right="right"-->
@@ -172,7 +172,7 @@
         <!--</v-list-item>-->
       <!--</v-list>-->
     <!--</v-navigation-drawer>-->
-    
+
   <section class="footer">
 	<div class="container">
 		<v-row class="footer-content">
@@ -188,7 +188,7 @@
 			</v-col>
 			<v-col cols="3" sm="12" class="footer-items" md="3" >
 				<h3>newsletter</h3>
-			
+
 				 <p class="pt-2 subscribe" >
 					 subscribe to our newsletter, so that you can be the first to know about new offers and promotions.
 				 </p>
